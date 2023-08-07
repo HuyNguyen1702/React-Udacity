@@ -1,10 +1,11 @@
 import { connect } from "react-redux";
 import Tweet from "./Tweet";
+
 const Dashboard = (props) => {
   return (
     <div>
       <h3 className="center">Your Timeline</h3>
-      <ul className="dashboard-lists">
+      <ul className="dashboard-list">
         {props.tweetIds.map((id) => (
           <li key={id}>
             <Tweet id={id} />
